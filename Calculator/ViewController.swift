@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var number: String = ""
     @IBOutlet weak var calcOutput: UILabel!
     @IBOutlet weak var operation: UILabel!
+    @IBOutlet weak var firstNumber: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
     func changeOperation(op: String){
         operation.text = op
         number = calcOutput.text!
+        firstNumber.text = number
     }
     
     func calculateResult(){
@@ -84,6 +86,7 @@ class ViewController: UIViewController {
         }
         operation.text = "="
         check = true
+        firstNumber.text = ""
         var result1: Int
         if(floor(result) == result){
             result1 = Int(floor(result))

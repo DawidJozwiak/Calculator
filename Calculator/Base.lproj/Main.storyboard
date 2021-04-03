@@ -301,12 +301,20 @@
                                     <action selector="dotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6F-1i-3X7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbD-5H-zZK" userLabel="Operation">
+                                <rect key="frame" x="257" y="113" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.92484930200000004" green="0.47135294379999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
                     <connections>
                         <outlet property="calcOutput" destination="Cyp-S0-r0Q" id="sZO-cJ-r63"/>
+                        <outlet property="firstNumber" destination="xbD-5H-zZK" id="O1E-7M-FmH"/>
                         <outlet property="operation" destination="Xne-fD-bRU" id="Fef-uU-0od"/>
                     </connections>
                 </viewController>
